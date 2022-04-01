@@ -1,0 +1,7 @@
+---
+- import_playbook: Master_secret.yml
+- hosts: localhost
+  tasks:
+     - name: login
+       debug:
+         msg: "The login is successfull with passowrd {{ secrets.dev_user }}"
